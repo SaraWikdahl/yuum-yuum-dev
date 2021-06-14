@@ -22,9 +22,6 @@ header {
   list-style: none;
 }
 
-.logo-container {
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -507,8 +504,6 @@ footer {
   padding: 5px;
   width: 186px;
   height: 250px;
-}
-.carousel-slide a {
 }
 
 #prevBtn {
