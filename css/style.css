@@ -9,28 +9,48 @@ body {
 }
 
 header {
-  display: flex;
   background-color: #75cfb8;
   align-items: center;
   padding: 5px 10px;
+  position: sticky;
+  width: 100%;
+  z-index: 4;
+  top: 0;
 }
 
-.logo-container,
-.nav-links {
-  display: flex;
+.nav-links li {
+  list-style: none;
 }
 
 .logo-container {
-  flex: 1;
 }
 
 nav {
-  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 2% 0px 2%;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 
 .nav-links {
+  display: flex;
   justify-content: space-around;
-  list-style: none;
+  width: 40%;
+}
+.logo-container {
+  flex-grow: 1;
 }
 
 .nav-link {
@@ -38,4 +58,902 @@ nav {
   font-size: 16px;
   text-decoration: none;
   font-family: "Luckiest Guy", cursive;
+}
+
+.first-page {
+  background-color: #e6f6f0;
+  min-height: 100vh;
+}
+
+.presentation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  width: 80%;
+  margin: auto;
+  min-height: 90vh;
+  align-items: center;
+}
+
+.cover img {
+  height: 65vh;
+  padding-left: 0px;
+}
+
+.intro-text {
+  z-index: 3;
+  padding-left: 20px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: auto;
+}
+
+.cover {
+  z-index: 3;
+  padding: 10px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: auto;
+}
+.intro-text h1 {
+  font-size: 44px;
+  font-family: "Luckiest Guy", cursive;
+  color: #6f6868;
+}
+
+.intro-text p {
+  color: #736c6c;
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+  font-size: 22px;
+  padding: 0px 0px 20px 0px;
+}
+
+.button-cta {
+  background-color: #ffc478;
+  color: white;
+  width: 170px;
+  height: 50px;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+
+.button-link {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.big-circle {
+  position: absolute;
+  bottom: -92px;
+  left: -43px;
+  height: 240px;
+  width: 260px;
+}
+.medium-circle {
+  position: absolute;
+  bottom: 100px;
+  left: 200px;
+  z-index: 1;
+  width: 70px;
+}
+.small-circle {
+  position: absolute;
+  bottom: 200px;
+  left: 200px;
+}
+
+.våra-smaker {
+  background-color: #faf7eb;
+  min-height: 500px;
+  padding: 100px 0px 200px 0px;
+}
+.box {
+  background-color: #f4f2e6;
+  width: 90%;
+  margin: auto;
+  padding: 40px 0px 40px 0px;
+}
+
+.smaker {
+  color: #ffc478;
+  font-size: 55px;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 3px;
+}
+
+.smakerbox {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 25px;
+  grid-row-gap: 50px;
+  width: 85%;
+  margin: auto;
+  justify-items: center;
+}
+
+.gallery img {
+  width: 100%;
+}
+.gallery a {
+  width: 100%;
+}
+
+.contactpage {
+  display: flex;
+  margin-top: 5px;
+}
+
+.left-box {
+  background-color: #fffafa;
+  width: 50%;
+  margin-right: 2.5px;
+}
+.right-box {
+  background-color: #e6f6f0;
+  width: 50%;
+  margin-left: 2.5px;
+}
+
+.kontaktaoss {
+  color: #ffc478;
+  font-size: 38px;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 2px;
+}
+
+.kontaktaossbox {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 110px 0px 50px 0px;
+}
+
+.left-box p {
+  color: #736c6c;
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+  font-size: 14px;
+  width: 90%;
+  margin: auto;
+}
+
+.right-box p {
+  color: #736c6c;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+.friendsbox {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  height: 400px;
+}
+
+.friends-ingress {
+  width: 90%;
+  margin: auto;
+}
+
+.friends-cta {
+  width: 60%;
+  margin: auto;
+  padding-top: 20px;
+}
+.friends-cta p {
+  padding: 20px 0px 20px 0px;
+}
+
+.friendsbox img {
+  width: 30%;
+}
+
+.yuumclub {
+  width: 100%;
+  background-color: #ffc478;
+  color: white;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.form-control {
+  box-shadow: none;
+  background-color: #fffafa;
+  border: 1px solid #736c6c;
+  font-size: 1em;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 4px;
+  line-height: 1.42857;
+  color: #736c6c;
+}
+
+.form-control:hover {
+  background-color: white;
+}
+
+form-group input,
+.form-group textarea {
+  max-width: 30em;
+  font-family: "Roboto", sans-serif;
+
+  resize: vertical;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+#yuumyuum-contact {
+  width: 60%;
+
+  margin: auto;
+  padding: 10px;
+}
+.form-btn {
+  width: 100%;
+  background-color: #75cfb8;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/*##########ABOUT page########*/
+
+.about-page {
+  background-color: #f0f4f9;
+}
+
+.sprida-glädje {
+  color: #ff85a5;
+  font-size: 38px;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 2px;
+  padding: 110px 0px 40px 0px;
+}
+
+.container-text {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  padding-bottom: 150px;
+}
+
+.container-text p {
+  color: #736c6c;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 10%;
+  width: 90%;
+  margin: auto;
+}
+
+.about-img {
+  height: 140px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.about-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.text-card {
+  padding: 15px 0px 55px 0px;
+  color: #736c6c;
+  font-family: "Roboto", sans-serif;
+}
+
+.text-card p {
+  padding-top: 20px;
+}
+
+/*##########FOOTER########*/
+
+footer {
+  background-color: #736c6c;
+  color: white;
+}
+
+.footer-nav {
+  display: flex;
+  font-size: 15px;
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100px;
+  align-items: center;
+}
+
+/*##########JORDGUBBE PAGE########*/
+
+.product-main {
+  background-color: #faf7eb;
+}
+
+.product-container {
+  display: flex;
+  width: 70%;
+  margin: auto;
+
+  min-height: 90vh;
+  align-items: center;
+}
+
+.ingredienser h2 {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 57px;
+  letter-spacing: 2px;
+  padding: 0px 0px 10px 0px;
+}
+
+.ingredienser .jordgubbe-color {
+  color: #ff85a5;
+}
+
+.ingred-text {
+  color: #736c6c;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+.thick {
+  font-weight: bold;
+}
+
+.ingredienser {
+  flex: 1;
+  padding: 0px 30px 0px 30px;
+}
+
+.product-cover img {
+  height: 100%;
+}
+
+.product-cover {
+  flex: 1;
+}
+
+.line {
+  height: 1px;
+  background-color: rgb(51, 50, 61);
+  opacity: 0.15;
+  margin: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+.container-line h2 {
+  color: #736c6c;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  text-align: center;
+  padding: 40px;
+}
+.carousel-wrap {
+  height: 400px;
+  background-color: #faf7eb;
+}
+
+.carousel-container {
+  width: 70%;
+  margin: auto;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 80%;
+  height: 250px;
+}
+.carousel-slide img {
+  padding: 5px;
+  width: 186px;
+  height: 250px;
+}
+.carousel-slide a {
+}
+
+#prevBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 1%;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(255, 133, 165, 0);
+}
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 1%;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(255, 133, 165, 0);
+}
+
+/*##########CHOKLAD PAGE########*/
+
+.ingredienser .choklad-color {
+  color: #6b492d;
+}
+
+/*##########PÄRON PAGE########*/
+
+.ingredienser .päron-color {
+  color: #929c11;
+}
+
+/*##########VANILJ PAGE########*/
+
+.ingredienser .vanilj-color {
+  color: #ffc478;
+}
+/*##########KÖRSBÄR PAGE########*/
+
+.ingredienser .körsbär-color {
+  color: #6a1e17;
+}
+
+/*##########MANGO PAGE########*/
+
+.ingredienser .mango-color {
+  color: #e9c526;
+}
+
+/*##########BLÅBÄR PAGE########*/
+
+.ingredienser .blåbär-color {
+  color: #202a4f;
+}
+/*##########KAFFE PAGE########*/
+
+.ingredienser .kaffe-color {
+  color: #9b773e;
+}
+
+@media screen and (max-width: 768px) {
+  .first-page {
+    min-height: 90vh;
+  }
+
+  .presentation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: auto;
+    min-height: 55vh;
+    align-items: center;
+    gap: 1%;
+    padding-top: 50px;
+  }
+
+  .cover img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .intro-text {
+    z-index: 3;
+    grid-column: 1/2;
+    margin: auto;
+  }
+
+  .cover {
+    z-index: 3;
+    padding: 10px;
+    grid-column: 2/3;
+    margin: auto;
+  }
+  .intro-text h1 {
+    font-size: 44px;
+    font-family: "Luckiest Guy", cursive;
+    color: #6f6868;
+  }
+
+  .intro-text p {
+    color: #736c6c;
+    font-family: "Roboto", sans-serif;
+    margin-top: 10px;
+    font-size: 22px;
+    padding: 0px 0px 20px 0px;
+  }
+
+  .button-cta {
+    background-color: #ffc478;
+    color: white;
+    width: 170px;
+    height: 50px;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+  }
+
+  .button-link {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+  }
+  .big-circle {
+    bottom: 27px;
+    left: -8px;
+    width: 260px;
+  }
+  .medium-circle {
+    bottom: 170px;
+    left: 218px;
+    width: 100px;
+  }
+  .small-circle {
+    position: absolute;
+    bottom: 284px;
+    left: 200px;
+    width: 63px;
+  }
+  .smakerbox {
+    width: 60%;
+  }
+
+  .contactpage {
+    flex-direction: column;
+  }
+  .left-box {
+    width: 100%;
+    min-height: 90vh;
+  }
+
+  #yuumyuum-contact {
+    width: 60%;
+    padding-top: 6%;
+  }
+
+  .kontaktaossbox {
+    padding: 80px 0px 50px 0px;
+  }
+  .kontaktaoss {
+    font-size: 40px;
+  }
+
+  .form-control {
+    border: 1px solid #736c6c;
+    font-size: 1.2em;
+    padding: 10px 20px;
+  }
+
+  .form-group {
+    margin-bottom: 23px;
+  }
+
+  .form-btn {
+    padding: 16px;
+  }
+
+  .right-box {
+    width: 100%;
+    min-height: 90vh;
+    margin-left: unset;
+  }
+
+  .friends-cta {
+    width: 70%;
+  }
+  .friends-cta p {
+    padding: 25px 0px 25px 0px;
+  }
+
+  .friendsbox {
+    width: 70%;
+    min-height: 55vh;
+  }
+  .friendsbox img {
+    width: 40%;
+  }
+  .container-text {
+    width: 80%;
+  }
+  .sprida-glädje {
+    font-size: 40px;
+  }
+  .container-text p {
+    font-size: 20px;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+  }
+  .about-card {
+    padding-bottom: 30px;
+    width: 100%;
+  }
+
+  .about-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-img {
+    height: unset;
+  }
+
+  .product-main {
+    height: 70vh;
+  }
+
+  .product-container {
+    flex-direction: column;
+    text-align: center;
+    min-height: 70vh;
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+  .ingredienser {
+    padding: 30px 0px 0px 0px;
+  }
+
+  .carousel-slide img {
+    width: 186px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  body {
+    overflow: auto;
+    position: relative;
+  }
+  .ingredienser h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding: 0px 0px 10px 0px;
+    color: red;
+  }
+
+  .ingredienser p {
+    font-size: 15px;
+  }
+
+  .product-main {
+    height: 100vh;
+  }
+
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 45vh;
+    top: 11vh;
+    background-color: #75cfb8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 1;
+  }
+  .nav-link {
+    font-size: 19px;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .presentation {
+    display: unset;
+    width: 100%;
+    margin: auto;
+    min-height: 90vh;
+    align-items: center;
+  }
+
+  .cover img {
+    width: 100%;
+    padding-left: 0px;
+    object-fit: cover;
+    min-height: 90vh;
+  }
+
+  .intro-text {
+    position: absolute;
+    z-index: 3;
+    padding-left: 30px;
+    width: 65%;
+    top: 4%;
+    margin: auto;
+  }
+
+  .intro-text h1 {
+    font-size: 40px;
+  }
+  .intro-text p {
+    font-size: 20px;
+    padding: 10px 0px 30px 0px;
+  }
+  .button-cta {
+    background-color: #ff85a5;
+  }
+
+  .cover {
+    z-index: 3;
+    margin: auto;
+    width: 100%;
+    min-height: 80vh;
+    padding: 0;
+  }
+  .big-circle {
+    display: none;
+  }
+  .medium-circle {
+    display: none;
+  }
+  .small-circle {
+    display: none;
+  }
+
+  .smakerbox {
+    width: 85%;
+  }
+  .smakerbox img {
+    display: none;
+  }
+  .smaker {
+    font-size: 35px;
+  }
+  .våra-smaker {
+    padding: 100px 0px 100px 0px;
+  }
+  .gallery img {
+    width: 70%;
+  }
+
+  .gallery a {
+    text-align: center;
+  }
+  .left-box {
+    min-height: 90vh;
+  }
+  .kontaktaoss {
+    font-size: 35px;
+  }
+  .kontaktaossbox {
+    width: 81%;
+  }
+  .friendsbox {
+    width: 90%;
+  }
+  .friendsbox img {
+    width: 50%;
+  }
+  .sprida-glädje {
+    font-size: 30px;
+  }
+  .container-text p {
+    font-size: 18px;
+  }
+  .container-text {
+    width: 90%;
+  }
+  .text-card {
+    text-align: center;
+  }
+  .footer-nav {
+    font-size: 11px;
+  }
+
+  /*##########SMAKER PAGE########*/
+  .product-main {
+    height: 120vh;
+  }
+  .ingredienser h2 {
+    font-size: 47px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+  }
+  .bild {
+    width: 250px;
+  }
+  .product-container {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+  .ingred-text {
+    font-size: 15px;
+  }
+  .carousel-wrap {
+    display: none;
+  }
+  .product-main {
+    height: 100vh;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle.line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle.line2 {
+  opacity: 0;
+}
+.toggle.line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
