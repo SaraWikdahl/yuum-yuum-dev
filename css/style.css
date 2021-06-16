@@ -756,6 +756,179 @@ footer {
   }
 }
 
+@media screen and (max-width: 414px) {
+  body {
+    overflow: auto;
+    position: relative;
+  }
+  .ingredienser h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding: 0px 0px 10px 0px;
+    color: red;
+  }
+
+  .ingredienser p {
+    font-size: 15px;
+  }
+
+  .product-main {
+    height: 100vh;
+  }
+
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 45vh;
+    top: 6em;
+    background-color: #75cfb8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 1;
+  }
+  .nav-link {
+    font-size: 19px;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .presentation {
+    display: unset;
+    width: 100%;
+    margin: auto;
+    min-height: 90vh;
+    align-items: center;
+  }
+
+  .cover img {
+    width: 100%;
+    padding-left: 0px;
+    object-fit: cover;
+    min-height: 90vh;
+  }
+
+  .intro-text {
+    position: absolute;
+    z-index: 3;
+    padding-left: 30px;
+    width: 65%;
+    top: 4%;
+    margin: auto;
+  }
+
+  .intro-text h1 {
+    font-size: 40px;
+  }
+  .intro-text p {
+    font-size: 20px;
+    padding: 10px 0px 30px 0px;
+  }
+  .button-cta {
+    background-color: #ff85a5;
+  }
+
+  .cover {
+    z-index: 3;
+    margin: auto;
+    width: 100%;
+    min-height: 80vh;
+    padding: 0;
+  }
+  .big-circle {
+    display: none;
+  }
+  .medium-circle {
+    display: none;
+  }
+  .small-circle {
+    display: none;
+  }
+
+  .smakerbox {
+    width: 85%;
+  }
+  .smakerbox img {
+    display: none;
+  }
+  .smaker {
+    font-size: 35px;
+  }
+  .våra-smaker {
+    padding: 100px 0px 100px 0px;
+  }
+  .gallery img {
+    width: 70%;
+  }
+
+  .gallery a {
+    text-align: center;
+  }
+  .left-box {
+    min-height: 90vh;
+  }
+  .kontaktaoss {
+    font-size: 35px;
+  }
+  .kontaktaossbox {
+    width: 81%;
+  }
+  .friendsbox {
+    width: 90%;
+  }
+  .friendsbox img {
+    width: 50%;
+  }
+  .sprida-glädje {
+    font-size: 30px;
+  }
+  .container-text p {
+    font-size: 18px;
+  }
+  .container-text {
+    width: 90%;
+  }
+  .text-card {
+    text-align: center;
+  }
+  .footer-nav {
+    font-size: 9px;
+  }
+
+  /*##########SMAKER PAGE########*/
+  .product-main {
+    height: 120vh;
+  }
+  .ingredienser h2 {
+    font-size: 47px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+  }
+  .bild {
+    width: 250px;
+  }
+  .product-container {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+  .ingred-text {
+    font-size: 15px;
+  }
+  .carousel-wrap {
+    display: none;
+  }
+  .product-main {
+    height: 100vh;
+  }
+}
+
 @media screen and (max-width: 378px) {
   body {
     overflow: auto;
@@ -780,7 +953,6 @@ footer {
     position: fixed;
     right: 0px;
     height: 45vh;
-    top: 11vh;
     background-color: #75cfb8;
     display: flex;
     flex-direction: column;
